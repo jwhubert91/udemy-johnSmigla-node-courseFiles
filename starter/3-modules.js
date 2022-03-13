@@ -10,4 +10,5 @@ sayHi(names.john);
 sayHi(names.peter);
 
 const data = require('./6-alternativeModuleExports');
-console.log(data);
+
+require('./7-mindGrenade');

@@ -4,9 +4,12 @@
 // __filename - file name
 // require    - function to use modules (CommonJS)
 // module     - info about current module (file)
-// process    - info about env where the program is being executed
+// process    - info about env where the program is being execute
 
-console.log(__dirname)
-setInterval(() => {
-  console.log('hello world')
-}, 1000)
+// Other available globals:
+// setInterval
+// setTimeout
+
+// setInterval(()=> console.log('Another second!'), 1000);
+
+setTimeout(()=> console.log("Nice! It's been 3 seconds :)"), 3000);

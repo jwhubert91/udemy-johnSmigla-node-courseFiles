@@ -17,3 +17,10 @@
 // Automatically generate the above file with `npm init` ...make sure you do this in the root of your project
 
 // npm packages (aka dependencies) are stored in the dependencies object in package.json
+
+
+// VERSIONING NPM PACKAGES -- covered in video 33
+// Take a look at this example: lodash 4.17.20
+// The largest number in the version number (furthest right) represents a major, breaking change
+// The middle number (17) is a minor version number which is backwards compatible
+// The smallest, leftmost number (20) is a patch or bug fix

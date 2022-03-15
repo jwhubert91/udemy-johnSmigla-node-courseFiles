@@ -6,9 +6,6 @@ const server = http.createServer((req,res) => {
   if (req.url === '/') {
     res.end('Home page')
   } else if (req.url === '/about') {
-    for (let i = 0; i > 0; i++) {
-      console.log('Major error')
-    }
     res.end('About page')
   } else {
     res.end('Error page')

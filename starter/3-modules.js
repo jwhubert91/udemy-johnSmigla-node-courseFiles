@@ -12,3 +12,6 @@ sayHi(names.peter);
 const data = require('./6-alternativeModuleExports');
 
 require('./7-mindGrenade');
+
+// Remember that when you require a module, you invoke the code.
+// The code will actually be executed when it is called.

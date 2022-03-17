@@ -1,26 +1,19 @@
 const express = require('express')
-const app = express();
+const path = require('path')
 
-// app.get() - read data
-// app.post() - insert data
-// app.put() - update data
-// app.delete() - delete data
-// app.all() - express method that works with all of the above...
-// app.use() - method to use middleware
-// app.listen() - instantiates a server on a given port
+const app = express()
 
-app.get('/',(req,res)=> {
-  res.status(200)
-  res.send('Home page :)')
-})
+// A static asset is a file that the server never has to change.
+app.use(express.static('./public'))
 
-app.get('/about',(req,res)=> {
-  res.status(200).send('About page :)')
-})
+// app.get('/',(req,res)=> {
+//   res.sendFile(path.resolve(__dirname,'./navbar-app/index.html'))
+//   adding to static assets
+//   server side rendering
+// })
 
-app.all('*', (req,res) => {
-  res.status(404)
-  res.send('<h1>Resource not found</h1>')
+app.all('*',(req,res)=> {
+  res.status(404).send('Resource not found.')
 })
 
 app.listen(6969, ()=> {
